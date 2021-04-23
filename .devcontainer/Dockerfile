@@ -4,7 +4,7 @@
 ARG VARIANT="14-buster"
 FROM mcr.microsoft.com/vscode/devcontainers/javascript-node:0-${VARIANT}
 
-# Add any install commands to user-install.sh or -install.sh and they'll be added to the image 
+# Add any install commands to install.sh or user-install.sh or and they'll be added to the image 
 COPY install.sh user-install.sh library-scripts/*.sh /tmp/library-scripts/
 RUN bash /tmp/library-scripts/install.sh \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/* /tmp/library-scripts/
