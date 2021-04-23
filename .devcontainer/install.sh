@@ -6,8 +6,8 @@ export DEBIAN_FRONTEND=noninteractive
 #
 # This script will run as the "root" user and is a great place to install new
 # software. However, if you want to add something you'd prefer to have owned by 
-# the node user, (like global npm packages or new node versions installed 
-# using nvm) add content into "user-install.sh" this image instead.
+# the node user (like global npm packages or new nvm installed node version), 
+# add content into "user-install.sh" instead.
 #
 
 # Example: Uncomment this section to install additional OS packages.
